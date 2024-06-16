@@ -1,10 +1,11 @@
 let cost=0;
 function mincost(arr)
 { 
+	let m=arr.length;
 //write your code here
 // return the min cost
-  arr.sort((a,b) => a-b);
-	for(let i=0;i<arr.length-1;i++){
+	for(let i=0;i<m;i++){
+		 arr.sort((a,b) => a-b);
 	cost+=arr[0]+arr[1];
 	arr.splice(0,2,cost);
 	}
